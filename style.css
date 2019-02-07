@@ -13,7 +13,7 @@ body {
 
 #navbar ul {
     list-style: none;
-    
+    display: flex;
 }
 
 #navbar ul li{
@@ -67,4 +67,44 @@ background: #e7e7e7;
 #navbar ul li:hover ul li:hover {
     background: #e0e0e0;
     color: inherit;
+}
+
+#navbar ul li:hover ul li span {
+    float: right;
+    color:#fff;
+    background: coral;
+    padding: 0.2rem 0.5rem;
+    text-align: center;
+    font-size:0.8rem;
+    border-radius: 5px;
+}
+#navbar ul li:hover ul li:hover span {
+    background: chocolate;
+}
+
+#showcase {
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 2 rem;
+    background: coral;
+}
+
+h1 {
+    color:#fff;
+}
+
+
+@media(max-width:600px){
+    #navbar ul {
+        flex-direction: column;
+    }
+
+    #navbar ul li:hover ul {
+        width: 100%;
+        position: relative;
+    }
 }
